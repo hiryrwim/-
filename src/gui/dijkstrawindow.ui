@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>DijkstraWindow</class>
+    <widget class="QWidget" name="DijkstraWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>550</width>
+                <height>450</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Алгоритм Дейкстры (Кратчайшие пути)</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <widget class="QLabel" name="labelVertices">
+                            <property name="text">
+                                <string>Количество вершин:</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLineEdit" name="verticesEdit">
+                            <property name="text">
+                                <string>4</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="labelStart">
+                            <property name="text">
+                                <string>Стартовая вершина:</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLineEdit" name="startVertexEdit">
+                            <property name="text">
+                                <string>0</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QLabel" name="labelEdges">
+                    <property name="text">
+                        <string>Введите ребра графа в формате &quot;откуда куда вес&quot; (каждое ребро с новой строки):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QPlainTextEdit" name="edgesEdit">
+                    <property name="placeholderText">
+                        <string>Пример:
+                            0 1 5
+                            0 2 3
+                            1 3 2
+                            2 3 6</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QPushButton" name="calculateButton">
+                    <property name="text">
+                        <string>Рассчитать кратчайшие пути</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="labelResult">
+                    <property name="text">
+                        <string>Результат (минимальные расстояния):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QTextEdit" name="resultEdit">
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+</ui>

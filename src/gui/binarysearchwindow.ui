@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>BinarySearchWindow</class>
+    <widget class="QWidget" name="BinarySearchWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>520</width>
+                <height>340</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Бинарный поиск (Деление пополам)</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QLabel" name="labelArray">
+                    <property name="text">
+                        <string>Введите отсортированный массив чисел (через пробел):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="arrayEdit">
+                    <property name="placeholderText">
+                        <string>Пример: 1 3 5 7 9 11 15</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="labelTarget">
+                    <property name="text">
+                        <string>Что искать (Target):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="targetEdit">
+                    <property name="placeholderText">
+                        <string>Например: 7</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QPushButton" name="searchButton">
+                    <property name="text">
+                        <string>Найти элемент</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="labelResult">
+                    <property name="text">
+                        <string>Результат поиска:</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QTextEdit" name="resultEdit">
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+</ui>

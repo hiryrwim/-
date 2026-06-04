@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>SHAWindow</class>
+    <widget class="QWidget" name="SHAWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>550</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>SHA-512 Криптомодуль</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QLabel" name="label">
+                    <property name="text">
+                        <string>Введите исходный текст:</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="inputEdit">
+                    <property name="placeholderText">
+                        <string>Например: hello или секретный_пароль</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <widget class="QPushButton" name="calcButton">
+                            <property name="text">
+                                <string>Сгенерировать SHA-512 хеш</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_3">
+                    <property name="text">
+                        <string>Вставьте хэш для сравнения (проверка подлинности):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="hashCompareEdit">
+                    <property name="placeholderText">
+                        <string>Вставьте сюда длинный SHA-512 хэш (128 символов)</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QPushButton" name="checkButton">
+                    <property name="text">
+                        <string>🔍 Проверить соответствие текста и хэша</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_2">
+                    <property name="text">
+                        <string>Результат работы модуля:</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QTextEdit" name="resultEdit">
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+</ui>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>UserWindow</class>
+    <widget class="QMainWindow" name="UserWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+
+        <property name="windowTitle">
+            <string>Main Menu</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+
+            <widget class="QLabel" name="titleLabel">
+                <property name="geometry">
+                    <rect>
+                        <x>220</x>
+                        <y>30</y>
+                        <width>180</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Algorithms Menu</string>
+                </property>
+            </widget>
+
+            <widget class="QPushButton" name="vigenereButton">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>90</y>
+                        <width>200</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Vigenere Cipher</string>
+                </property>
+            </widget>
+
+            <widget class="QPushButton" name="shaButton">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>140</y>
+                        <width>200</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SHA-512</string>
+                </property>
+            </widget>
+
+            <widget class="QPushButton" name="binaryButton">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>190</y>
+                        <width>200</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Binary Search</string>
+                </property>
+            </widget>
+
+            <widget class="QPushButton" name="dijkstraButton">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>240</y>
+                        <width>200</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Dijkstra</string>
+                </property>
+            </widget>
+
+        </widget>
+
+        <widget class="QMenuBar" name="menubar"/>
+        <widget class="QStatusBar" name="statusbar"/>
+
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

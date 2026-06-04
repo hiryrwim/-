@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>VigenereWindow</class>
+    <widget class="QWidget" name="VigenereWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>500</width>
+                <height>380</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Шифр Виженера (Криптомодуль)</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QLabel" name="label_text">
+                    <property name="text">
+                        <string>Введите текст (только английские буквы):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="textEdit">
+                    <property name="placeholderText">
+                        <string>Например: Attack at dawn</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_key">
+                    <property name="text">
+                        <string>Ключевое слово (только английские буквы):</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="keyEdit">
+                    <property name="placeholderText">
+                        <string>Например: LEMON</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <widget class="QPushButton" name="encryptButton">
+                            <property name="text">
+                                <string>🔒 Зашифровать</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="decryptButton">
+                            <property name="text">
+                                <string>🔓 Расшифровать</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_result">
+                    <property name="text">
+                        <string>Результат работы:</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QTextEdit" name="resultEdit">
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+</ui>
